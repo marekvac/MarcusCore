@@ -1,6 +1,6 @@
 package me.marcuscz.minigames.eliminationshuffle;
 
-import me.marcuscz.minigames.core.MinigameOptions;
+import me.marcuscz.minigames.api.MinigameOptions;
 import org.bukkit.Location;
 
 public class EliminationOptions extends MinigameOptions {

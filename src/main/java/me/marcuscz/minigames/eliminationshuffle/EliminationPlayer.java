@@ -1,8 +1,7 @@
 package me.marcuscz.minigames.eliminationshuffle;
 
 import me.marcuscz.minigames.core.Core;
-import me.marcuscz.minigames.core.MinigamePlayer;
-import me.marcuscz.minigames.core.managers.MessageManager;
+import me.marcuscz.minigames.api.MinigamePlayer;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;

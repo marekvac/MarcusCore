@@ -1,4 +1,4 @@
-package me.marcuscz.minigames.core.exceptions;
+package me.marcuscz.minigames.api.exceptions;
 
 public abstract class MinigameException extends Exception {
 

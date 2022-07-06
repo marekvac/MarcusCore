@@ -1,8 +1,8 @@
-package me.marcuscz.minigames.core.managers;
+package me.marcuscz.minigames.api.managers;
 
 import me.marcuscz.minigames.core.Core;
-import me.marcuscz.minigames.core.MinigameMessages;
-import me.marcuscz.minigames.core.exceptions.MessageException;
+import me.marcuscz.minigames.api.MinigameMessages;
+import me.marcuscz.minigames.api.exceptions.MessageException;
 import org.bukkit.entity.Player;
 
 import java.util.HashMap;

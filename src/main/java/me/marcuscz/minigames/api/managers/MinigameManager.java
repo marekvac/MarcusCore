@@ -1,11 +1,11 @@
-package me.marcuscz.minigames.core.managers;
+package me.marcuscz.minigames.api.managers;
 
 import me.marcuscz.minigames.core.Core;
-import me.marcuscz.minigames.core.Minigame;
-import me.marcuscz.minigames.core.exceptions.InitException;
-import me.marcuscz.minigames.core.exceptions.MessageException;
-import me.marcuscz.minigames.core.exceptions.StartException;
-import me.marcuscz.minigames.core.exceptions.UnknownMinigameException;
+import me.marcuscz.minigames.api.Minigame;
+import me.marcuscz.minigames.api.exceptions.InitException;
+import me.marcuscz.minigames.api.exceptions.MessageException;
+import me.marcuscz.minigames.api.exceptions.StartException;
+import me.marcuscz.minigames.api.exceptions.UnknownMinigameException;
 
 import java.io.FileNotFoundException;
 import java.util.HashMap;

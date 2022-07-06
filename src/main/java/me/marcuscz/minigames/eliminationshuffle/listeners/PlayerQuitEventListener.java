@@ -1,6 +1,6 @@
 package me.marcuscz.minigames.eliminationshuffle.listeners;
 
-import me.marcuscz.minigames.core.MinigameEventListener;
+import me.marcuscz.minigames.api.MinigameEventListener;
 import me.marcuscz.minigames.eliminationshuffle.EliminationShuffle;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerQuitEvent;

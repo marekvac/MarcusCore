@@ -2,8 +2,8 @@ package me.marcuscz.minigames.core.listeners;
 
 import me.marcuscz.minigames.core.Core;
 import me.marcuscz.minigames.core.CoreMessages;
-import me.marcuscz.minigames.core.Minigame;
-import me.marcuscz.minigames.core.MinigamePlayer;
+import me.marcuscz.minigames.api.Minigame;
+import me.marcuscz.minigames.api.MinigamePlayer;
 import org.bukkit.GameMode;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

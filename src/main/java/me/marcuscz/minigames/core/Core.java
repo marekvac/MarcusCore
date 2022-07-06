@@ -2,12 +2,13 @@ package me.marcuscz.minigames.core;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import me.marcuscz.minigames.core.exceptions.MessageException;
-import me.marcuscz.minigames.core.exceptions.UnknownMinigameException;
+import me.marcuscz.minigames.api.MinigameOptions;
+import me.marcuscz.minigames.api.exceptions.MessageException;
+import me.marcuscz.minigames.api.exceptions.UnknownMinigameException;
 import me.marcuscz.minigames.core.listeners.PlayerJoinListener;
-import me.marcuscz.minigames.core.managers.CommandManager;
-import me.marcuscz.minigames.core.managers.MessageManager;
-import me.marcuscz.minigames.core.managers.MinigameManager;
+import me.marcuscz.minigames.api.managers.CommandManager;
+import me.marcuscz.minigames.api.managers.MessageManager;
+import me.marcuscz.minigames.api.managers.MinigameManager;
 import me.marcuscz.minigames.eliminationshuffle.EliminationShuffle;
 import org.bukkit.Location;
 import org.bukkit.event.HandlerList;

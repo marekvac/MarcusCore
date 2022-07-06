@@ -1,9 +1,9 @@
-package me.marcuscz.minigames.core;
+package me.marcuscz.minigames.api;
 
 import dev.jorel.commandapi.CommandAPICommand;
-import me.marcuscz.minigames.core.exceptions.InitException;
-import me.marcuscz.minigames.core.exceptions.MessageException;
-import me.marcuscz.minigames.core.managers.PlayerManager;
+import me.marcuscz.minigames.api.exceptions.InitException;
+import me.marcuscz.minigames.api.exceptions.MessageException;
+import me.marcuscz.minigames.api.managers.PlayerManager;
 import org.bukkit.entity.Player;
 
 import java.io.FileNotFoundException;

@@ -1,10 +1,11 @@
-package me.marcuscz.minigames.core;
+package me.marcuscz.minigames.api;
 
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
+import me.marcuscz.minigames.core.Core;
 import org.bukkit.Location;
 
 import java.io.*;

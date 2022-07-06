@@ -1,12 +1,11 @@
-package me.marcuscz.minigames.core.managers;
+package me.marcuscz.minigames.api.managers;
 
 import dev.jorel.commandapi.CommandAPICommand;
-import dev.jorel.commandapi.arguments.ListArgumentBuilder;
 import dev.jorel.commandapi.arguments.StringArgument;
 import me.marcuscz.minigames.core.Core;
-import me.marcuscz.minigames.core.exceptions.InitException;
-import me.marcuscz.minigames.core.exceptions.StartException;
-import me.marcuscz.minigames.core.exceptions.UnknownMinigameException;
+import me.marcuscz.minigames.api.exceptions.InitException;
+import me.marcuscz.minigames.api.exceptions.StartException;
+import me.marcuscz.minigames.api.exceptions.UnknownMinigameException;
 
 public class CommandManager {
 

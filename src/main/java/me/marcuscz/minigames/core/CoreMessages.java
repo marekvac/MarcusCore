@@ -1,5 +1,7 @@
 package me.marcuscz.minigames.core;
 
+import me.marcuscz.minigames.api.MinigameMessages;
+
 public enum CoreMessages implements MinigameMessages {
 
     JOINED_AS_SPECTATOR;

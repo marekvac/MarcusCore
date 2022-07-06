@@ -1,12 +1,12 @@
 package me.marcuscz.minigames.eliminationshuffle;
 
 import dev.jorel.commandapi.CommandAPICommand;
-import me.marcuscz.minigames.core.Constants;
+import me.marcuscz.minigames.api.Constants;
 import me.marcuscz.minigames.core.Core;
-import me.marcuscz.minigames.core.Minigame;
-import me.marcuscz.minigames.core.MinigameOptions;
-import me.marcuscz.minigames.core.exceptions.InitException;
-import me.marcuscz.minigames.core.exceptions.MessageException;
+import me.marcuscz.minigames.api.Minigame;
+import me.marcuscz.minigames.api.MinigameOptions;
+import me.marcuscz.minigames.api.exceptions.InitException;
+import me.marcuscz.minigames.api.exceptions.MessageException;
 import me.marcuscz.minigames.eliminationshuffle.listeners.PlayerInteractEventListener;
 import me.marcuscz.minigames.eliminationshuffle.listeners.PlayerQuitEventListener;
 import me.marcuscz.minigames.utils.phase.ItemManager;

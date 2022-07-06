@@ -1,6 +1,6 @@
-package me.marcuscz.minigames.core.managers;
+package me.marcuscz.minigames.api.managers;
 
-import me.marcuscz.minigames.core.MinigamePlayer;
+import me.marcuscz.minigames.api.MinigamePlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;

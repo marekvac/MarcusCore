@@ -1,6 +1,6 @@
 package me.marcuscz.minigames.eliminationshuffle;
 
-import me.marcuscz.minigames.core.MinigameMessages;
+import me.marcuscz.minigames.api.MinigameMessages;
 
 public enum EliminationMessages implements MinigameMessages {
     GAME_STARTED,

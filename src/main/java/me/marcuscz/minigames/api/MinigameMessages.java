@@ -1,4 +1,4 @@
-package me.marcuscz.minigames.core;
+package me.marcuscz.minigames.api;
 
 public interface MinigameMessages {
 
