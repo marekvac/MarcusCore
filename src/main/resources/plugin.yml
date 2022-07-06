@@ -1,0 +1,8 @@
+name: MarcusCore
+version: '0.1'
+main: me.marcuscz.minigames.core.Core
+api-version: 1.17
+authors: [ MarcusCZ ]
+description: Core plugin for custom minigames
+depend: [ CommandAPI ]
+website: marcuscz.me

@@ -1,0 +1,19 @@
+Messages:
+  elimination:
+    prefix: "§l[ELIMINATION] §r"
+    game_started: "§2Game started"
+    your_item: "§aYour item: §6{0}"
+    everyone_completed: "§aEveryone but one found their item"
+    time_remain: "§c{0} seconds left!"
+    player_failed: "§4Player {0} failed!"
+    player_won: "§5Player §d{0} §5won!"
+    round: "Current round: {0}"
+    player_found_item: "§aPlayer §6{0} §abrought their item"
+    next_item: "§aYou can prepare for next item: §6{0}"
+    game_stopped: "§4§lGame has been stopped!"
+    no_winner: "§cNo player won this game"
+    beacon_location: "§b§lBeacon location"
+    current_item: "§7Current item: §f§l{0}"
+
+  core:
+    joined_as_spectator: "§7§oThere is an active minigame. You have been joined as a spectator."
