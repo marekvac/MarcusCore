@@ -1,5 +1,5 @@
 name: MarcusCore
-version: '0.1'
+version: '0.1.1'
 main: me.marcuscz.minigames.core.Core
 api-version: 1.17
 authors: [ MarcusCZ ]
