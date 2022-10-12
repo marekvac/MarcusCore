@@ -24,13 +24,13 @@ public abstract class Minigame<T extends MinigamePlayer, O extends MinigameOptio
     public abstract void init() throws InitException;
     public abstract void onStart();
     public abstract void onStop();
-    public abstract void onPause();
-    public abstract void onResume();
-    public abstract void onTick();
-    public void onSkip() {}
     public void onLatePlayerJoin(Player p) {}
 
     public PlayerManager<T> getPlayerManager() {
         return playerManager;
+    }
+
+    public O getOptions() {
+        return options;
     }
 }
