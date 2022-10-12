@@ -1,3 +1,11 @@
+## Core
+
+Po připojení na server, plugin automaticky teleportuje hráče na lobby a nastaví mu ADVENTURE mód.
+
+Lokace lobby se nastavuje následujícím příkazem:
+
+    /game core setlobby
+
 ## Elimination Shuffle
 
 *Eliminační ItemShuffle*
