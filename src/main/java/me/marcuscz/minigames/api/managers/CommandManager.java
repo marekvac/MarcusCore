@@ -51,7 +51,7 @@ public class CommandManager {
                             try {
                                 Core.getMinigameManager().stop();
                             } catch (UnknownMinigameException e) {
-                                commandSender.sendMessage("§4No minigame selected");
+                                commandSender.sendMessage("§4" + e.getMessage());
                             }
                         })
                 )
@@ -60,7 +60,7 @@ public class CommandManager {
                             try {
                                 Core.getMinigameManager().pause();
                             } catch (UnknownMinigameException e) {
-                                commandSender.sendMessage("§4No minigame selected");
+                                commandSender.sendMessage("§4" + e.getMessage());
                             }
                         })
                 )
@@ -69,7 +69,7 @@ public class CommandManager {
                             try {
                                 Core.getMinigameManager().resume();
                             } catch (UnknownMinigameException e) {
-                                commandSender.sendMessage("§4No minigame selected");
+                                commandSender.sendMessage("§4" + e.getMessage());
                             }
                         })
                 )
@@ -78,7 +78,7 @@ public class CommandManager {
                             try {
                                 Core.getMinigameManager().skip();
                             } catch (UnknownMinigameException e) {
-                                commandSender.sendMessage("§4No minigame selected");
+                                commandSender.sendMessage("§4" + e.getMessage());
                             }
                         })
                 )
