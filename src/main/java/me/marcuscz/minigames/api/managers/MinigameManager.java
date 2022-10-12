@@ -1,5 +1,8 @@
 package me.marcuscz.minigames.api.managers;
 
+import me.marcuscz.minigames.api.minigame.PausableMinigame;
+import me.marcuscz.minigames.api.minigame.SkippableMinigame;
+import me.marcuscz.minigames.api.minigame.TickingMinigame;
 import me.marcuscz.minigames.core.Core;
 import me.marcuscz.minigames.api.Minigame;
 import me.marcuscz.minigames.api.exceptions.InitException;
@@ -65,7 +68,10 @@ public class MinigameManager {
         }
         Minigame<?,?> minigame = minigames.get(name);
         minigame.init();
-        Core.getInstance().getServer().getScheduler().runTaskTimerAsynchronously(Core.getInstance(), minigame::onTick, 1, 1);
+
+        if (minigame instanceof TickingMinigame) {
+            Core.getInstance().getServer().getScheduler().runTaskTimerAsynchronously(Core.getInstance(), ((TickingMinigame) minigame)::onTick, 1, 1);
+        }
         selectedMinigame = name;
     }
 
@@ -91,17 +97,35 @@ public class MinigameManager {
 
     public void pause() throws UnknownMinigameException {
         if (selectedMinigame == null) throw new UnknownMinigameException("No minigame selected");
-        minigames.get(selectedMinigame).onPause();
+
+        Minigame<?,?> minigame = minigames.get(selectedMinigame);
+        if (minigame instanceof PausableMinigame) {
+            ((PausableMinigame) minigame).onPause();
+        } else {
+            throw new UnknownMinigameException("This minigame doesn't support pausing");
+        }
     }
 
     public void resume() throws UnknownMinigameException {
         if (selectedMinigame == null) throw new UnknownMinigameException("No minigame selected");
-        minigames.get(selectedMinigame).onResume();
+
+        Minigame<?,?> minigame = minigames.get(selectedMinigame);
+        if (minigame instanceof PausableMinigame) {
+            ((PausableMinigame) minigame).onResume();
+        } else {
+            throw new UnknownMinigameException("This minigame doesn't support pausing");
+        }
     }
 
     public void skip() throws UnknownMinigameException {
         if (selectedMinigame == null) throw new UnknownMinigameException("No minigame selected");
-        minigames.get(selectedMinigame).onSkip();
+
+        Minigame<?,?> minigame = minigames.get(selectedMinigame);
+        if (minigame instanceof SkippableMinigame) {
+            ((SkippableMinigame) minigame).onSkip();
+        } else {
+            throw new UnknownMinigameException("This minigame doesn't support skipping");
+        }
     }
 
     public boolean isMinigameActive() {

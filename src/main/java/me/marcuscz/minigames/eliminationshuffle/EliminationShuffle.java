@@ -2,6 +2,9 @@ package me.marcuscz.minigames.eliminationshuffle;
 
 import dev.jorel.commandapi.CommandAPICommand;
 import me.marcuscz.minigames.api.Constants;
+import me.marcuscz.minigames.api.minigame.PausableMinigame;
+import me.marcuscz.minigames.api.minigame.SkippableMinigame;
+import me.marcuscz.minigames.api.minigame.TickingMinigame;
 import me.marcuscz.minigames.core.Core;
 import me.marcuscz.minigames.api.Minigame;
 import me.marcuscz.minigames.api.MinigameOptions;
@@ -26,7 +29,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class EliminationShuffle extends Minigame<EliminationPlayer, EliminationOptions> {
+public class EliminationShuffle extends Minigame<EliminationPlayer, EliminationOptions> implements PausableMinigame, TickingMinigame, SkippableMinigame {
 
     private int timer;
     private boolean active;
