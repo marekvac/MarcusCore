@@ -36,7 +36,7 @@ public class PlayerInteractEventListener extends MinigameEventListener<Eliminati
             EliminationPlayer player = minigame.getPlayerManager().getPlayer(e.getPlayer().getUniqueId());
             if (player.checkCompleted()) {
                 // broadcast completed
-                if (!minigame.checkIfAllCompleted() && minigame.getItems().peek() != null) {
+                if (minigame.getOptions().peekNextItem && !minigame.checkIfAllCompleted() && minigame.getItems().peek() != null) {
                     player.peekItem(minigame.getItems().peek());
                 }
             }

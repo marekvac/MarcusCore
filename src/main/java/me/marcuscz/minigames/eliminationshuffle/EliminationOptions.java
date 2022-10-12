@@ -17,6 +17,6 @@ public class EliminationOptions extends MinigameOptions {
     public boolean autoResume = false;
     public Location spawn = null;
     public Location beacon = null;
-
+    public boolean peekNextItem = false;
 
 }
